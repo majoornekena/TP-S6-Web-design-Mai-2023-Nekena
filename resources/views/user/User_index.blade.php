@@ -4,7 +4,7 @@
         <title>Connexion administrateur</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta name="description" content="E-Art ETU001670 le site de Hardi qui concerne l IA">
-        <title>ARTISTA-ETU001664/title>
+        <title>ARTISTA</title>
         <link rel="stylesheet" href="<?php echo asset('assets/Login/bootstrap/css/bootstrap.min.css')?>">
         <link rel="stylesheet" href="<?php echo asset('assets/Login/fonts/fontawesome-all.min.css')?>">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
