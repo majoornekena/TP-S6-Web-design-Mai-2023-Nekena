@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="description" content="E-Art ETU001670 le site de Hardi qui concerne l IA">
-  <title>E-Art - ETU001670</title>
+  <title>ARTISTA-ETU001664/title>
   <meta content="" name="keywords">
 
   <!-- Favicons -->
