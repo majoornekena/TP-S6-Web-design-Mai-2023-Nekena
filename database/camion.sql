@@ -11,7 +11,7 @@ mdp varchar(30),
 mail varchar(30)
 );
 
-insert into admin(mdp,mail) values ('hardi','hardi');
+insert into admin(mdp,mail) values ('admin','admin');
 
 create table articles(
 idarticle serial primary key,

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="E-Art ETU001670 le site de Hardi qui concerne l IA">
+  <meta name="description" content="ARTISTA, Site web de Nekena concernant l'IA">
   <title>ARTISTA</title>
   <meta content="" name="keywords">
 
@@ -39,7 +39,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets2/assets/img/logo.png" alt=""> -->
-        <h1>E-Art</h1>
+        <h1>IA ARTISTA</h1>
       </a>
 
       <nav id="navbar" class="navbar">

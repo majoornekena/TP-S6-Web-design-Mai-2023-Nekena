@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="E-Art ETU001670 le site de Hardi qui concerne l IA">
+  <meta name="description" content="ARTISTA, Site web de Nekena concernant l'IA">
   <title>ARTISTA</title>
   <meta content="" name="keywords">
 
@@ -28,8 +28,85 @@
   <link href="assets2/assets/css/variables.css" rel="stylesheet">
   <link href="assets2/assets/css/main.css" rel="stylesheet">
 
-</head>
+  <style>
+    /* Custom styles for theme */
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Inter', sans-serif;
+    }
 
+    .header {
+      background-color: #3358ff;
+      color: #fff;
+    }
+
+    .header .logo h1 {
+      color: #fff;
+    }
+
+    .header .navbar .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .header .position-relative a,
+    .header .position-relative i {
+      color: #fff;
+    }
+
+    .hero-slider .swiper-slide .img-bg-inner h2,
+    .hero-slider .swiper-slide .img-bg-inner p {
+      color: #3358ff;
+    }
+
+    .posts h1 {
+      color: #3358ff;
+      margin-bottom: 20px;
+    }
+
+    .posts .card-title {
+      color: #3358ff;
+    }
+
+    .footer-legal {
+      background-color: #3358ff;
+      color: #fff;
+    }
+
+    .footer-legal .credits a {
+      color: #fff;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .header .logo h1 {
+        font-size: 24px;
+      }
+
+      .header .navbar .navbar-nav .nav-link {
+        font-size: 14px;
+      }
+
+      .header .position-relative a,
+      .header .position-relative i {
+        font-size: 20px;
+      }
+
+      .hero-slider .swiper-slide .img-bg-inner h2 {
+        font-size: 24px;
+      }
+      .hero-slider .swiper-slide .img-bg-inner p {
+        font-size: 16px;
+      }
+
+      .posts .card-title {
+        font-size: 18px;
+      }
+
+      .footer-legal .credits a {
+        font-size: 14px;
+      }
+    }
+  </style>
 <body>
 
   <!-- ======= Header ======= -->
@@ -39,13 +116,11 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets2/assets/img/logo.png" alt=""> -->
-        <h1>E-Art</h1>
+        <h1>IA ARTISTA</h1>
       </a>
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="{{ url('/faq') }}">FAQ</a></li>
-        </ul>
+       
       </nav><!-- .navbar -->
 
       <div class="position-relative">
@@ -114,21 +189,20 @@
       <div class="container" data-aos="fade-up">
        
         <h1>Liste des articles et les actualites publiees</h1>
- 
+ <br>
         <form action="{{ url('/searchFront') }}" class="search-form" method="post">
-            <span class="icon bi-search"></span>
-            <input type="text" placeholder="Entrer un mot cle" class="form-control">
-            <button class="btn js-search-close"><span class="bi-x"></span></button>
+            
+            
           </form>
 
         <div class="row">
       @foreach($listePub as $rows) <!-- boucle pour afficher 12 cartes -->
-            <div class="col-md-3">
+            <div class="col-md-3" style="min-height:30vh">
               <div class="card">
                 <img src="{{ $rows->img }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h1 class="card-title">{{ $rows->titre }}</h1>
-                  <h2 class="my-3">Auteur : {{ $rows->auteur }}</h2>
+                  <h3 class="card-title">{{ $rows->titre }}</h3>
+                  <p class="my-3">Auteur : {{ $rows->auteur }}</p>
                   <a href="{{ url('/article') }}/{{Str::slug($rows->titre) }}-{{ $rows->idarticle }}-index.html" class="btn btn-primary">Voir plus</a>
                 </div>
               </div>
@@ -139,8 +213,9 @@
       </div>
     </section> <!-- End Post Grid Section -->
 
-    
+  
   <nav aria-label="Page navigation example">
+  <center>
     <ul class="pagination">
   <li class="page-item {{ $currentPage == 1 ? 'disabled' : '' }}">
   <a class="page-link" href="{{ $currentPage == 1 ? '#' : url('/paginationFront') }}/{{ Str::random(10) }}.{{ $currentPage - 1 }}.paginationFront.html" aria-label="Précédent">
@@ -160,9 +235,9 @@
   </a>
   </li>
   </ul>
-  
+  </center>
   </nav>
-    
+ 
 
 <footer>
     <div class="footer-legal">

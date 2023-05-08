@@ -3,7 +3,7 @@
     <head>
         <title>Connexion administrateur</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <meta name="description" content="E-Art ETU001670 le site de Hardi qui concerne l IA">
+        <meta name="description" content="ARTISTA, Site web de Nekena concernant l'IA">
         <title>ARTISTA</title>
         <link rel="stylesheet" href="<?php echo asset('assets/Login/bootstrap/css/bootstrap.min.css')?>">
         <link rel="stylesheet" href="<?php echo asset('assets/Login/fonts/fontawesome-all.min.css')?>">

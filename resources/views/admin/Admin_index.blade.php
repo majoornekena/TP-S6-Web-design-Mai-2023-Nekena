@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <meta name="description" content="E-Art ETU001670 le site de Hardi qui concerne l IA">
+        <meta name="description" content="ARTISTA, Site web de Nekena concernant l'IA">
         <title>ARTISTA</title>
         <link rel="stylesheet" href="assets/Login/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/Login/fonts/fontawesome-all.min.css">
@@ -77,11 +77,12 @@
         }
     }
 </style>
+<br><br><br>
 <section class="register-photo" style="background-color: transparent;">
 <div class="form-container">
     <div class="image-holder" style="background: url(&quot;<?php echo asset('assets/Login/img/RH.jpg');?>&quot;);"></div>
 
-    <a href="{{ url('/front') }}" class="front-office-link">Front Office</a>
+    
 
     <form action="{{url('/log_admin')}}" method="post" class="login-form" style="height: auto;">
         {{ csrf_field() }}
@@ -107,6 +108,7 @@
         @endif
     </form>
 </div>
+<a href="{{ url('/front') }}" class="front-office-link">Front Office</a>
     </section>
     <script src="assets/Login/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/Login/js/bs-init.js"></script>
